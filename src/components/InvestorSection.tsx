@@ -402,16 +402,19 @@ const InvestorSection = () => {
                 <span className="absolute bottom-0 left-0 w-full h-0 bg-Heitoraí-dark transition-all duration-300 -z-0 group-hover:h-full"></span>
               </motion.button>
               
-              <motion.button
+              <motion.a
+                href="https://api.whatsapp.com/send?phone=5562957735044&text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20as%20oportunidades%20de%20investimento%20no%20Condomínio%20Reserva%20Rio%20Uru%20Heitoraí."
+                target="_blank"
+                rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="btn-primary group overflow-hidden relative"
+                className="btn-primary group overflow-hidden relative inline-flex items-center justify-center cursor-pointer"
               >
                 <span className="relative z-10 group-hover:text-white transition-colors duration-300">
                   FALE COM UM CONSULTOR
                 </span>
                 <span className="absolute bottom-0 left-0 w-full h-0 bg-Heitoraí-dark transition-all duration-300 -z-0 group-hover:h-full"></span>
-              </motion.button>
+              </motion.a>
             </div>
           </motion.div>
         </div>
