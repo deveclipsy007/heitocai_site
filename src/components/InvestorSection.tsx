@@ -81,34 +81,26 @@ const InvestorSection = () => {
     }
   };
   
-  // Função para compartilhar simulação
+  // Função para compartilhar simulação via WhatsApp
   const shareSimulation = () => {
-    // Dados da simulação para compartilhamento
-    const simulationData = {
-      investment: initialInvestment,
-      months: months,
-      rate: appreciationRate,
-      futureValue: futureValue.toFixed(2),
-      roi: roi.toFixed(2)
-    };
+    // Texto da mensagem com os detalhes da simulação
+    const message = `Confira esta simulação de investimento no Condomínio Reserva Rio Uru Heitoraí:%0A%0A` +
+      `💰 *Investimento Inicial:* R$ ${initialInvestment.toLocaleString('pt-BR')}%0A` +
+      `📈 *Valorização Mensal:* ${appreciationRate}%%0A` +
+      `⏳ *Período:* ${months} meses%0A` +
+      `🚀 *Valor Estimado:* R$ ${futureValue.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}%0A` +
+      `📊 *Lucro Estimado:* R$ ${profit.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}%0A%0A` +
+      `Quero te mostrar essa oportunidade incrível! Acesse: ${window.location.href}`;
     
-    // Simula cópia para a área de transferência e exibe toast
-    navigator.clipboard.writeText(JSON.stringify(simulationData))
-      .then(() => {
-        toast({
-          title: "Simulação copiada!",
-          description: "Os dados da sua simulação podem ser compartilhados agora.",
-          duration: 3000,
-        });
-      })
-      .catch(() => {
-        toast({
-          title: "Não foi possível copiar",
-          description: "Ocorreu um erro ao copiar sua simulação.",
-          variant: "destructive",
-          duration: 3000,
-        });
-      });
+    // Abre o WhatsApp com a mensagem pré-preenchida
+    window.open(`https://wa.me/?text=${message}`, '_blank');
+    
+    // Feedback para o usuário
+    toast({
+      title: "Compartilhando simulação...",
+      description: "Abrindo o WhatsApp para compartilhar os detalhes.",
+      duration: 3000,
+    });
   };
   
   const containerVariants = {
@@ -396,9 +388,14 @@ const InvestorSection = () => {
                 className="btn-primary group overflow-hidden relative"
                 onClick={shareSimulation}
               >
-                <span className="relative z-10 group-hover:text-white transition-colors duration-300">
-                  COMPARTILHAR SIMULAÇÃO
-                </span>
+                <div className="flex items-center gap-2">
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.5 2.5C15.55 2.5 14.5 3.55 14.5 5.5C14.5 7.45 15.55 8.5 17.5 8.5C19.45 8.5 20.5 7.45 20.5 5.5C20.5 3.55 19.45 2.5 17.5 2.5ZM16.5 5.5C16.5 4.95 16.95 4.5 17.5 4.5C18.05 4.5 18.5 4.95 18.5 5.5C18.5 6.05 18.05 6.5 17.5 6.5C16.95 6.5 16.5 6.05 16.5 5.5ZM18.5 10.5H16.5C15.67 10.5 15 11.17 15 12V19.5H17V12H18.5V10.5ZM12.5 5.5C10.55 5.5 9 7.05 9 9V10.5H10.5V9C10.5 7.95 11.45 7 12.5 7H13.5V5.5H12.5ZM6.5 5.5H5V7H6.5V10.5H5V12H6.5V19.5H9V12H11.5V10.5H9V9C9 7.05 7.45 5.5 5.5 5.5C5.5 5.5 6.5 5.5 6.5 5.5Z"/>
+                  </svg>
+                  <span className="relative z-10 group-hover:text-white transition-colors duration-300">
+                    COMPARTILHAR VIA WHATSAPP
+                  </span>
+                </div>
                 <span className="absolute bottom-0 left-0 w-full h-0 bg-Heitoraí-dark transition-all duration-300 -z-0 group-hover:h-full"></span>
               </motion.button>
               
