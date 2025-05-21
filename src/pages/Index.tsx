@@ -11,7 +11,6 @@ const Hero = lazy(() => import("@/components/Hero"));
 const Features = lazy(() => import("@/components/Features"));
 const Map = lazy(() => import("@/components/Map"));
 const Contact = lazy(() => import("@/components/Contact"));
-const AboutUs = lazy(() => import("@/components/AboutUs"));
 const TimelineDemo = lazy(() => import("@/components/TimelineDemo").then(module => ({ default: module.TimelineDemo })));
 const InvestorSection = lazy(() => import("@/components/InvestorSection"));
 
@@ -78,14 +77,6 @@ const Index = () => {
         <AnimatedSection delay={0.4} className="relative z-10 bg-white w-full">
           <Suspense fallback={<LoadingFallback />}>
             <Map />
-          </Suspense>
-        </AnimatedSection>
-      </div>
-      
-      <div id="sobre-nos" className="w-full bg-white">
-        <AnimatedSection delay={0.5} className="relative z-10 bg-white w-full">
-          <Suspense fallback={<LoadingFallback />}>
-            <AboutUs />
           </Suspense>
         </AnimatedSection>
       </div>
