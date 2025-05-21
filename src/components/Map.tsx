@@ -142,7 +142,7 @@ const Map = () => {
           duration: 0.8,
           delay: 0.4
         }} className="mt-6 text-Heitoraí-dark/80 max-w-3xl mx-auto">
-            Desperte para uma nova realidade onde a natureza encontra o luxo sustentável. A apenas 30 minutos 
+            Desperte para uma nova realidade onde a natureza encontra o luxo sustentável. A apenas 135 km (1h 30min) 
             de Goiânia, o Reserva Rio Uru Heitoraí redefine o conceito de bem viver com acesso exclusivo ao 
             cristalino Rio Uru e uma infraestrutura completa que respeita e valoriza o meio ambiente.
           </motion.p>
@@ -480,7 +480,7 @@ const Map = () => {
                   scale: 1.05
                 }} transition={{
                   duration: 0.5
-                }} src="https://cnkcoxooaetehlufjwbr.supabase.co/storage/v1/object/public/avatars//Frame%203.png" alt="Mapa do condomínio" className="w-full h-auto object-contain" />
+                }} src="https://hvmwzgizwpzybkmqzdfc.supabase.co/storage/v1/object/public/sdsdb//PLANTAHUMAIZADA-GERAL-R03-01.png" alt="Planta do condomínio" className="w-full h-auto object-contain" />
                   
                   <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-Heitoraí-dark/80 via-Heitoraí-dark/40 to-transparent px-4 py-6">
                     <div className="flex items-center justify-between">

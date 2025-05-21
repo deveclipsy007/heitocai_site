@@ -81,29 +81,34 @@ const InvestorSection = () => {
     }
   };
   
-  // Função para copiar o link da página
-  const shareSimulation = async () => {
-    try {
-      // Copia a URL atual para a área de transferência
-      await navigator.clipboard.writeText(window.location.href);
-      
-      // Feedback para o usuário
-      toast({
-        title: "✅ Link copiado com sucesso!",
-        description: "Agora você pode colar o link onde desejar.",
-        duration: 3000,
-        className: "bg-green-50 border-green-200 text-green-800"
+  // Função para compartilhar simulação
+  const shareSimulation = () => {
+    // Dados da simulação para compartilhamento
+    const simulationData = {
+      investment: initialInvestment,
+      months: months,
+      rate: appreciationRate,
+      futureValue: futureValue.toFixed(2),
+      roi: roi.toFixed(2)
+    };
+    
+    // Simula cópia para a área de transferência e exibe toast
+    navigator.clipboard.writeText(JSON.stringify(simulationData))
+      .then(() => {
+        toast({
+          title: "Simulação copiada!",
+          description: "Os dados da sua simulação podem ser compartilhados agora.",
+          duration: 3000,
+        });
+      })
+      .catch(() => {
+        toast({
+          title: "Não foi possível copiar",
+          description: "Ocorreu um erro ao copiar sua simulação.",
+          variant: "destructive",
+          duration: 3000,
+        });
       });
-      
-    } catch (err) {
-      // Em caso de erro ao copiar
-      toast({
-        title: "❌ Não foi possível copiar o link",
-        description: "Por favor, copie manualmente a URL da página.",
-        variant: "destructive",
-        duration: 3000,
-      });
-    }
   };
   
   const containerVariants = {
@@ -391,14 +396,9 @@ const InvestorSection = () => {
                 className="btn-primary group overflow-hidden relative"
                 onClick={shareSimulation}
               >
-                <div className="flex items-center gap-2">
-                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3" />
-                  </svg>
-                  <span className="relative z-10 group-hover:text-white transition-colors duration-300">
-                    COPIAR LINK
-                  </span>
-                </div>
+                <span className="relative z-10 group-hover:text-white transition-colors duration-300">
+                  COMPARTILHAR SIMULAÇÃO
+                </span>
                 <span className="absolute bottom-0 left-0 w-full h-0 bg-Heitoraí-dark transition-all duration-300 -z-0 group-hover:h-full"></span>
               </motion.button>
               
