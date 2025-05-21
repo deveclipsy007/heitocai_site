@@ -257,7 +257,7 @@ const Map = () => {
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 backgroundBlendMode: "overlay"
-              }} className="relative z-10 p-8 h-full flex flex-col justify-between bg-black/[0.52]">
+              }} className="relative z-10 p-8 h-full flex flex-col justify-between bg-black/[0.7]">
                   <div className="flex items-center space-x-2 mt-4">
                     <motion.div initial={{
                     width: 0
@@ -290,9 +290,9 @@ const Map = () => {
                     duration: 0.8,
                     delay: 0.4
                   }}>
-                      <p className="text-Heitoraí-light-green font-serif uppercase text-xl mb-4">ALLAN SÁVIO</p>
+                      <p className="text-Heitoraí-light-green font-serif uppercase text-xl mb-4">GEOVANNA APOLINÁRIO</p>
                       <p className="text-xs uppercase mb-4 font-light tracking-wider">
-                        ARQUITETO PREMIADO INTERNACIONAL
+                        ARQUITETA PREMIADA INTERNACIONAL
                       </p>
                       <Separator className="my-5 bg-white/20" />
                       <p className="text-sm italic leading-relaxed">

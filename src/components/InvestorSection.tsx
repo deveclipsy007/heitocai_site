@@ -403,7 +403,7 @@ const InvestorSection = () => {
               </motion.button>
               
               <motion.a
-                href="https://api.whatsapp.com/send?phone=5562957735044&text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20as%20oportunidades%20de%20investimento%20no%20Condomínio%20Reserva%20Rio%20Uru%20Heitoraí."
+                href="https://www.contate.me/556296305667"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}

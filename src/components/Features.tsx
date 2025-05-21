@@ -7,22 +7,22 @@ const Features = () => {
   const featureItems = [
     {
       title: "NATUREZA E RIO EXCLUSIVOS",
-      icon: "🌿",
+      icon: <img src="https://cnkcoxooaetehlufjwbr.supabase.co/storage/v1/object/public/avatars//Natureza.svg" alt="Natureza" className="w-10 h-10" />,
       description: "Um santuário natural com acesso privilegiado às margens do Rio Uru, onde cada amanhecer revela uma paisagem deslumbrante de águas cristalinas e vegetação exuberante, criando um cenário perfeito para a sua qualidade de vida."
     }, 
     {
       title: "PAISAGISMO PREMIADO",
-      icon: "🌳",
+      icon: <img src="https://cnkcoxooaetehlufjwbr.supabase.co/storage/v1/object/public/avatars//Natureza%202.svg" alt="Natureza" className="w-10 h-10" />,
       description: "Projeto paisagístico assinado por especialistas renomados, integrando espécies nativas à infraestrutura do condomínio, criando um ambiente onde a biodiversidade local é preservada e valorizada em cada detalhe."
     }, 
     {
       title: "SEGURANÇA PREMIUM",
-      icon: "🔒",
+      icon: <img src="https://cnkcoxooaetehlufjwbr.supabase.co/storage/v1/object/public/avatars//Seguranca.png" alt="Segurança" className="w-10 h-10" />,
       description: "Sistema de segurança completo com monitoramento 24 horas, controle de acesso biométrico e equipe altamente treinada, garantindo tranquilidade total para você e sua família desfrutarem do melhor que a natureza oferece."
     }, 
     {
       title: "HARMONIA PERFEITA",
-      icon: "☯️",
+      icon: <img src="https://cnkcoxooaetehlufjwbr.supabase.co/storage/v1/object/public/avatars//balance.png" alt="Harmonia" className="w-10 h-10" />,
       description: "Arquitetura biofílica revolucionária que respeita o meio ambiente e maximiza o bem-estar dos moradores, com construções que se integram à paisagem natural, proporcionando uma experiência de vida verdadeiramente sustentável."
     }
   ];
@@ -160,7 +160,7 @@ const Features = () => {
                 <CardContent className="p-6 flex flex-col items-center h-full">
                   <motion.div
                     animate={floatingAnimation}
-                    className="text-5xl mb-6 bg-gradient-to-br from-Heitoraí-light-green/60 to-Heitoraí-green/30 p-4 rounded-full transform transition-all duration-500 group-hover:bg-gradient-to-br group-hover:from-Heitoraí-green/60 group-hover:to-Heitoraí-light-green/30"
+                    className="mb-6 bg-gradient-to-br from-Heitoraí-light-green/60 to-Heitoraí-green/30 p-4 rounded-full transform transition-all duration-500 group-hover:bg-gradient-to-br group-hover:from-Heitoraí-green/60 group-hover:to-Heitoraí-light-green/30 flex items-center justify-center" style={{ width: '80px', height: '80px' }}
                   >
                     {feature.icon}
                   </motion.div>

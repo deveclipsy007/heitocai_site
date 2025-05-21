@@ -155,7 +155,7 @@ const Hero = () => {
               }} 
               className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-medium mb-3 md:mb-4 text-zinc-950"
             >
-              Seu paraíso, sua reserva.
+Viva à Beira do Rio Uru: Seu Refúgio Premium na Natureza
             </motion.h2>
             
             <motion.p 
@@ -171,7 +171,7 @@ const Hero = () => {
               }} 
               className="mb-6 md:mb-10 max-w-lg font-medium text-base md:text-lg text-zinc-950"
             >
-              Loteamento premium ao lado rio Uru próximo da cidade de Heitoraí. Com acesso privilegiado ao cristalino Rio Uru, cada detalhe foi meticulosamente planejado para proporcionar uma experiência de vida sem igual, onde sofisticação e sustentabilidade caminham juntas.
+Exclusivo loteamento às margens do deslumbrante Rio Uru, em Heitoraí. Aqui, você encontra o equilíbrio perfeito entre o requinte de um empreendimento premium e a beleza intocada da natureza. Com acesso direto às águas cristalinas do rio, cada lote foi cuidadosamente planejado para oferecer privacidade, conforto e um estilo de vida único em harmonia com o meio ambiente.
             </motion.p>
             
             <motion.div 

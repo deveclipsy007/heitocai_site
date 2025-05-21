@@ -24,7 +24,7 @@ const VideoSection = () => {
   const { toast } = useToast();
 
   // Updated video URL
-  const videoUrl = "https://cnkcoxooaetehlufjwbr.supabase.co/storage/v1/object/public/avatars//freepik__aerial-shot-transform-a-muddy-brown-river-into-a-c__77961.mp4";
+  const videoUrl = "https://cnkcoxooaetehlufjwbr.supabase.co/storage/v1/object/public/avatars//freepik__aerial-wide-shot-a-lush-green-landscape-with-a-win__72625.mp4";
 
   // Memoizar a função de log para evitar recriação em cada renderização
   const addToLog = useCallback((event: string, details?: string, error?: any) => {

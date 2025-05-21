@@ -141,14 +141,14 @@ const Navbar = () => {
                 Contato
               </a>
               <a 
-                href="https://wa.me/5562957735044" 
+                href="https://www.contate.me/556296305667" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-3 py-2 rounded-md transition-colors text-lg font-medium mt-2"
                 onClick={handleMenuItemClick}
               >
                 <Phone size={18} />
-                <span>WhatsApp</span>
+                <span>Fale Conosco</span>
               </a>
             </div>
           </div>
