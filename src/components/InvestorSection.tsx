@@ -255,7 +255,7 @@ const InvestorSection = () => {
               },
               {
                 title: "Investimento Acessível",
-                description: "Entrada a partir de R$499,00 com planos de parcelas personalizados e flexíveis",
+                description: "Parcelas a partir de R$499,00 com planos personalizados e flexíveis",
                 icon: <Percent className="h-6 w-6 text-Heitoraí-green" />
               }
             ].map((item, index) => (
