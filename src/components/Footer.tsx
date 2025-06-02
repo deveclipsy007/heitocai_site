@@ -5,13 +5,15 @@ const Footer = () => {
           <div>
             <h3 className="font-serif text-lg mb-4">Contato</h3>
             <p className="text-sm mb-2">(62) 99630-5667</p>
-            <p className="text-sm">contato@4bincorporadora.com.br</p>
+            <p className="text-sm">thyago@4bincorporadora.com</p>
           </div>
           
           <div>
             <h3 className="font-serif text-lg mb-4">Endereço</h3>
-            <p className="text-sm mb-2">Estrada das Araras, 000</p>
-            <p className="text-sm">CEP 00000-000</p>
+            <p className="text-sm mb-1">Rua T-36, N° 3182</p>
+            <p className="text-sm mb-1">Edificio Aquarius Center, Sala 1310</p>
+            <p className="text-sm mb-1">Setor Bueno, Goiânia - GO</p>
+            <p className="text-sm">CEP: 74223-052</p>
           </div>
           
           <div>
